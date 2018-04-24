@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude Analysis - LATTITUDE</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-inverse">
+
+            <div class="container-fluid">
+        
+                <div class="navbar-header">
+                <a class="navbar-brand" href="home.html">Lattitude!</a>
+                </div>
+        
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Comparison</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="vs_cloudiness.html">vs Cloudiness</a></li>
+                    <li><a href="vs_humidity.html">vs Humidity</a></li>
+                    <li><a href="vs_windSpeed.html">vs Wind Speed</a></li>
+                    <li><a href="vs_maxTemp.html">vs Max Temp</a></li>
+                    </ul>
+                </li>
+                <li><a href="data.html">Data</a></li>
+                </ul>
+        
+            </div>
+                
+        </nav>
+
+        <div class='container'>
+            <h1>Plot Comparison<small> Click on each graph to learn more.</small></h1>
+            <table>
+                <tr>
+                    <td>
+                        <a href='vs_maxTemp.html'>
+                            <img src='lat_vs_maxTemp.png'>
+                        </a>
+                    </td>
+                    <td>
+                        <a href='vs_windSpeed.html'>
+                            <img src='lat_vs_windSpeed.png'>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href='vs_cloudiness.html'>
+                            <img src='lat_vs_cloudiness.png'>
+                        </a>
+                    </td>
+                    <td>
+                        <a href='vs_humidity.html'>
+                            <img src='lat_vs_humidity.png'>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</body>

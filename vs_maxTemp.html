@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude Analysis - LATTITUDE</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-inverse">
+
+                <div class="container-fluid">
+            
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="home.html">Lattitude!</a>
+                  </div>
+            
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="vs_cloudiness.html">vs Cloudiness</a></li>
+                        <li><a href="vs_humidity.html">vs Humidity</a></li>
+                        <li><a href="vs_windSpeed.html">vs Wind Speed</a></li>
+                        <li><a href="vs_maxTemp.html">vs Max Temp</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="data.html">Data</a></li>
+                  </ul>
+            
+                </div>
+                
+              </nav>
+    
+    <div class="container">
+        <div class="row">
+            <div class='col-md-9' style='border:1px solid #cecece' p=20px>
+                <h1>Latitude vs. Maximum Temperature</h1>
+                <img src='lat_vs_maxTemp.png' class='pull-left'>
+                <p padding=20px>This graph highlights the relationship between max recorded temperature(F) and latitude. </p><br>
+                <p>There is a clear positive trend in temperature as one moves towards the equator (latitude = 0). The lopsided appearance of the graph is due to greater landmass in the northern hemisphere.</p>
+            </div>
+            <div class='col-md-3' style='border:1px solid #cecece' p=20px>
+                <h3>More Plots:</h3>
+                <ul>
+                    <li><a href='vs_cloudiness.html'>Latitude vs. Cloudiness</a></li>
+                    <li><a href='vs_humidity.html'>Latitude vs. Humidity</a></li>
+                    <li><a href='vs_windSpeed.html'>Latitude vs. Wind Speed</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
