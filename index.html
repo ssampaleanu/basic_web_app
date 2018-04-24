@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude Analysis - LATTITUDE</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <a class="navbar-brand" href="home.html">Lattitude!</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="comparison.html">Comparison</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="vs_cloudiness.html">vs Cloudiness</a></li>
+            <li><a href="vs_humidity.html">vs Humidity</a></li>
+            <li><a href="vs_windSpeed.html">vs Wind Speed</a></li>
+            <li><a href="vs_maxTemp.html">vs Max Temp</a></li>
+          </ul>
+        </li>
+        <li><a href="data.html">Data</a></li>
+      </ul>
+
+    </div>
+    
+  </nav>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8" style='border:1px solid #cecece' p=20px>
+          <h1>Welcome to Lattitude<small> a site by Stefan Sampaleanu</small></h1>
+          <img src='lat_vs_maxTemp.png' class='pull-left'>
+          <p padding=20px>This site covers a simple analysis of weather around the globe. Our question in particular: how does latitude effect different components of the weather?</p><br>
+          <p>To create a random collection of 500 cities, we randomly generated coordinates and used an app called Citipy to determine the nearest cities to those coordinates.</p><br>
+          <p>We then ran our collection of cities through OWM (Open WeatherMap), an API that returns an assortment of weather metrics. The collected data is visible under the 'Data' tab.</p><br>
+          <p padding=20px>After, we plotted latitude (N/S orientation) versus a few other variables: cloudiness, humidity, maximum temperature, and wind speed.</p><br>
+        </div>
+        <div class='col-md-4' style='border:1px solid #cecece'>
+          <h3>Visualizations</h3>
+          <img src='lat_vs_cloudiness.png' class='image-fluid' alt='Responsive image'>
+          <img src='lat_vs_humidity.png' class='image-fluid' alt='Responsive image'>
+          <img src='lat_vs_maxTemp.png' class='image-fluid' alt='Responsive image'>
+          <img src='lat_vs_windSpeed.png' class='image-fluid' alt='Responsive image'>
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>
